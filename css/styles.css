@@ -345,12 +345,24 @@ ol {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office1.jpg);
+      url(../images/people-office1-mob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     margin: 0 auto;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office1-mob-2x.jpg);
+    }
   }
 
   .hero-header {
@@ -740,6 +752,7 @@ ol {
     letter-spacing: 0.04em;
     padding-left: 16px;
     max-width: 398px;
+    opacity: 0.30000001192092896;
   }
 
   .footer-input::placeholder {
@@ -989,7 +1002,7 @@ ol {
 
   .modal-form {
     margin: 0 auto;
-    width: 360px;
+    max-width: 360px;
   }
 
   .modal-paragraph {
@@ -1006,7 +1019,7 @@ ol {
 
   .input {
     outline: transparent;
-    width: 360px;
+    width: 100%;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     height: 40px;
@@ -1037,7 +1050,7 @@ ol {
 
   .comment {
     resize: none;
-    width: 360px;
+    width: 100%;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     line-height: 1.17;
@@ -1279,12 +1292,24 @@ ol {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office1.jpg);
+      url(../images/people-office1-tab.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     margin: 0 auto;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office1-tab-2x.jpg);
+    }
   }
 
   .hero-header {
@@ -1336,8 +1361,8 @@ ol {
     row-gap: 72px;
     column-gap: 24px;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    max-width: 736px;
+    margin: 0 auto;
   }
 
   .section-functions {
@@ -1573,7 +1598,7 @@ ol {
     column-gap: 24px;
     margin-left: 108px;
   }
-  
+
   .footer-p {
     font-style: normal;
     font-size: 16px;
@@ -1674,6 +1699,7 @@ ol {
     line-height: 1.5;
     letter-spacing: 0.04em;
     padding-left: 16px;
+    opacity: 0.30000001192092896;
   }
 
   .footer-input::placeholder {
@@ -2214,6 +2240,18 @@ ol {
     background-position: center;
     max-width: 1440px;
     margin: 0 auto;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office1-2x.jpg);
+    }
   }
 
   .hero-header {
