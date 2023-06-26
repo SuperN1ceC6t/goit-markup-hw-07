@@ -215,7 +215,7 @@ ol {
   }
 
   .mob-menu {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -244,7 +244,14 @@ ol {
     z-index: 1;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  .mob-menu.is-open {
+    transform: translateX(0);
+  }
+
   .mob-close-btn {
     fill: #2e2f42;
     border: 1px solid #2e2f42;
@@ -521,7 +528,6 @@ ol {
   .section-team-li {
     background-color: #ffffff;
     width: 264px;
-    height: 428px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -1477,7 +1483,6 @@ ol {
   .section-team-li {
     background-color: #ffffff;
     width: 264px;
-    height: 428px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -1605,7 +1610,6 @@ ol {
     line-height: 24px;
     color: #f4f4fd;
     width: 264px;
-    margin-bottom: 16px;
     margin-top: 0;
   }
 
@@ -2409,7 +2413,6 @@ ol {
   .section-team-li {
     background-color: #ffffff;
     width: 264px;
-    height: 428px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
